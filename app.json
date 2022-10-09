@@ -1,8 +1,8 @@
 {
 	"name": "RocketChatRN",
 	"share": "ShareRocketChatRN",
-	"displayName": "RocketChatRN",
-	"server": "https://open.rocket.chat",
-	"appGroup": "group.ios.chat.rocket",
-	"appStoreID": "1272915472"
+	"displayName": "W.E Talk",
+	"server": "https://chat.kfidi.com",
+	"appGroup": "group.ios.we3d.wetalk",
+	"appStoreID": "6443745944"
 }

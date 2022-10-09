@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_notification.png",
+      "filename" : "splash.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_notification 1.png",
+      "filename" : "splash 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_notification 2.png",
+      "filename" : "splash 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
