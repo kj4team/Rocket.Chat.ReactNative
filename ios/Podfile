@@ -22,7 +22,7 @@ def all_pods
   end
 
   flags = get_default_flags()
-  
+
   use_react_native!(
     :path => config[:reactNativePath],
     :hermes_enabled => true, # flags[:hermes_enabled],
