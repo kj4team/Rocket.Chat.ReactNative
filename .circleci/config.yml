@@ -156,25 +156,25 @@ commands:
             fi
           working_directory: android
 
-      - run:
-          name: Upload sourcemaps to Bugsnag
-          command: |
-            if [[ $CIRCLE_JOB == "android-build-official" ]]; then
-              npx bugsnag-source-maps upload-react-native \
-                --api-key=$BUGSNAG_KEY_OFFICIAL \
-                --app-version-code=$CIRCLE_BUILD_NUM \
-                --platform android \
-                --source-map=android/app/build/generated/sourcemaps/react/officialPlay/release/app.bundle.map \
-                --bundle android/app/build/generated/assets/react/officialPlay/release/app.bundle
-            fi
-            if [[ $CIRCLE_JOB == "android-build-experimental" || "android-automatic-build-experimental" ]]; then
-              npx bugsnag-source-maps upload-react-native \
-                --api-key=$BUGSNAG_KEY \
-                --app-version-code=$CIRCLE_BUILD_NUM \
-                --platform android \
-                --source-map=android/app/build/generated/sourcemaps/react/experimentalPlay/release/app.bundle.map \
-                --bundle android/app/build/generated/assets/react/experimentalPlay/release/app.bundle
-            fi
+#      - run:
+#          name: Upload sourcemaps to Bugsnag
+#          command: |
+#            if [[ $CIRCLE_JOB == "android-build-official" ]]; then
+#              npx bugsnag-source-maps upload-react-native \
+#                --api-key=$BUGSNAG_KEY_OFFICIAL \
+#                --app-version-code=$CIRCLE_BUILD_NUM \
+#                --platform android \
+#                --source-map=android/app/build/generated/sourcemaps/react/officialPlay/release/app.bundle.map \
+#                --bundle android/app/build/generated/assets/react/officialPlay/release/app.bundle
+#            fi
+#            if [[ $CIRCLE_JOB == "android-build-experimental" || "android-automatic-build-experimental" ]]; then
+#              npx bugsnag-source-maps upload-react-native \
+#                --api-key=$BUGSNAG_KEY \
+#                --app-version-code=$CIRCLE_BUILD_NUM \
+#                --platform android \
+#                --source-map=android/app/build/generated/sourcemaps/react/experimentalPlay/release/app.bundle.map \
+#                --bundle android/app/build/generated/assets/react/experimentalPlay/release/app.bundle
+#            fi
 
       - store_artifacts:
           path: android/app/build/outputs
