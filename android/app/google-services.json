@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "279983498521",
+    "project_id": "we3d-chat",
+    "storage_bucket": "we3d-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279983498521:android:23580d13e05c08a0619188",
+        "android_client_info": {
+          "package_name": "com.we3d.wetalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279983498521-lmv7ejb3ovvg8jc7l10c0g2f4s19b1n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX9cj4dtKCE4IMJATPtDDQnTQk1EZENPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279983498521-lmv7ejb3ovvg8jc7l10c0g2f4s19b1n2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "279983498521-rr4e111vlaiiori1v27hr7315ejfdkea.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.we3d.wetalk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
