@@ -78,6 +78,9 @@
 		1EFEB59C2493B6640072EDC0 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1EFEB5952493B6640072EDC0 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		24A2AEF2383D44B586D31C01 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BB44DD4855498082A744AD /* libz.tbd */; };
 		24BD876703F0627D89762AC9 /* libPods-defaults-RocketChatRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5592AE62299CA1B26F7B376C /* libPods-defaults-RocketChatRN.a */; };
+		26236F8D296B552D00D56AFE /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 26236F8C296B552D00D56AFE /* main.jsbundle */; };
+		26236F8E296B552D00D56AFE /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 26236F8C296B552D00D56AFE /* main.jsbundle */; };
+		26236F8F296B552D00D56AFE /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 26236F8C296B552D00D56AFE /* main.jsbundle */; };
 		26CAA4B928F270090050CFFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26CAA4B728F270090050CFFB /* GoogleService-Info.plist */; };
 		26CAA4BA28F270090050CFFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26CAA4B728F270090050CFFB /* GoogleService-Info.plist */; };
 		31EE74A5653390B27C059F6D /* libPods-defaults-ShareRocketChatRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9C80F85A0BFACDB040AF12 /* libPods-defaults-ShareRocketChatRN.a */; };
@@ -263,6 +266,7 @@
 		1EFEB5972493B6640072EDC0 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		1EFEB5992493B6640072EDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFEB5A12493B67D0072EDC0 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		26236F8C296B552D00D56AFE /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		26CAA4B728F270090050CFFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D11FAADB0362D1B069EA819 /* libPods-defaults-Rocket.Chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-Rocket.Chat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-Rocket.Chat/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -517,6 +521,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				26236F8C296B552D00D56AFE /* main.jsbundle */,
 				26CAA4B728F270090050CFFB /* GoogleService-Info.plist */,
 				1E76CBC425152A7F0067298C /* Shared */,
 				1E068CFB24FD2DAF00A0FFC1 /* AppGroup */,
@@ -788,6 +793,7 @@
 				7A14FCED257FEB3A005BDCD4 /* Experimental.xcassets in Resources */,
 				7AE10C0628A59530003593CB /* Inter.ttf in Resources */,
 				7A006F14229C83B600803143 /* GoogleService-Info.plist in Resources */,
+				26236F8D296B552D00D56AFE /* main.jsbundle in Resources */,
 				7A0D62D2242AB187006D5C06 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,6 +804,7 @@
 			files = (
 				7A610CD327ECE38100B8ABDD /* custom.ttf in Resources */,
 				26CAA4B928F270090050CFFB /* GoogleService-Info.plist in Resources */,
+				26236F8E296B552D00D56AFE /* main.jsbundle in Resources */,
 				1EC6ACB722CB9FC300A41C61 /* MainInterface.storyboard in Resources */,
 				7AE10C0728A59530003593CB /* Inter.ttf in Resources */,
 			);
@@ -807,6 +814,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26236F8F296B552D00D56AFE /* main.jsbundle in Resources */,
 				7A610CD427ECE38100B8ABDD /* custom.ttf in Resources */,
 				26CAA4BA28F270090050CFFB /* GoogleService-Info.plist in Resources */,
 			);
@@ -1616,7 +1624,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-extensions-share/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$PODS_CONFIGURATION_BUILD_DIR/Firebase",
+					$PODS_CONFIGURATION_BUILD_DIR/Firebase,
 				);
 				INFOPLIST_FILE = ShareRocketChatRN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1684,7 +1692,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-extensions-share/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$PODS_CONFIGURATION_BUILD_DIR/Firebase",
+					$PODS_CONFIGURATION_BUILD_DIR/Firebase,
 				);
 				INFOPLIST_FILE = ShareRocketChatRN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
